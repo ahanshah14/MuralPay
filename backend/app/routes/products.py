@@ -4,7 +4,7 @@ from typing import List
 from .. import models, schemas
 from ..database import get_db
 
-router = APIRouter(prefix="/api/products", tags=["products"])
+router = APIRouter(prefix="/api-staging/products", tags=["products"])
 
 @router.get("", response_model=List[schemas.Product])
 def get_products(db: Session = Depends(get_db)):

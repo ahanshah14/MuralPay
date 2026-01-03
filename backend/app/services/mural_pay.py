@@ -25,7 +25,7 @@ def get_mural_headers() -> Dict[str, str]:
 def get_accounts() -> List[Dict[str, Any]]:
     """Fetch all accounts associated with the organization"""
     try:
-        url = f"{MURAL_API_BASE_URL}/api/accounts"
+        url = f"{MURAL_API_BASE_URL}/api-staging/accounts"
         headers = get_mural_headers()
         
         response = requests.get(url, headers=headers)
@@ -78,7 +78,7 @@ def create_payin(
         Payin response from Mural Pay API
     """
     try:
-        url = f"{MURAL_API_BASE_URL}/api/payins/payin"
+        url = f"{MURAL_API_BASE_URL}/api-staging/payins/payin"
         headers = get_mural_headers()
         
         payload = {

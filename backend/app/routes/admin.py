@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from .. import models, schemas
 from ..database import get_db
 
-router = APIRouter(prefix="/api/admin", tags=["admin"])
+router = APIRouter(prefix="/api-staging/admin", tags=["admin"])
 
 @router.put("/products/{product_id}/price", response_model=schemas.Product)
 def update_product_price(
