@@ -1,0 +1,7 @@
+{
+    "mcpServers": {
+      "mural-production": {
+        "url": "https://developers.muralpay.com/mcp"
+      }
+    }
+  }
